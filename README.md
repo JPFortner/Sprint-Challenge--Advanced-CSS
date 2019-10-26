@@ -33,14 +33,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+A. A fully responsive website uses responsive units (rems, %s, etc) to ensure that the site adapts to the screen size.  Adaptive uses media queries to alter the layout and viewable content based on the size of the device used to view the site.
 
 2. Describe what it means to be mobile first vs desktop first.
+A. A mobile first approach means that you build the site with mobile functionality first and then add/expand viewable content as you reach higher breaking points.  Desktop first approach implies that you build a "complete" desktop-viewable site and then pare it down at various break points in order to ensure adaptability.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+A. So, the default font size is usually 16px.  Problem is, a rem (or "root element") is effectively a percentage of that default size - and, as 16 is not easily on the base10 decimal system, it's pretty difficult to use rem to get a desired font size on the fly.  By setting the font-size to 62.5% at the HTML level, the default font size become 10px instead, which is much more flexible and user-friendly to work with aiming for a specific font size (i.e. 16px is now 1.6rem).
 
 4. How would you describe preprocessing to someone new to CSS?
+A. Preprocessing gives you so much more control over your style sheet.  You can nest elements for cleaner code, create adaptive variables, mix classes into your nested code, and more!  When you wrap your brain around it, it's ridiculously powerful and you will never want to use CSS without it.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+A. I love clean, organized, neat code, so being able to nest everything together and collapse my styles into their most efficient form is great!  It can be sometimes difficult to recognize as you're coding where a mixin or a parametrix mixin or a variable might be useful, though.  It requires a further different mindset than the basic one developed for CSS.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
